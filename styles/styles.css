@@ -1,3 +1,296 @@
-body {
-      background-color: #E5E5E5;
+/* 
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+*/
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --logo-focus-color: #2196F3;
+    --bckgr-color: #2F303A;
+    --bckgr-deteil-color: #E5E5E5;
+    --bckgr-body-color:#FFFFFF;
+    --picture-color:#F5F4FA;
 }
+
+body {
+    font-family: 'Roboto', 
+    sans-serif;
+    background-color: var(--bckgr-body-color);
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+    /* navigation */
+
+    .logo{
+        font-family: 'Raleway',
+        sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .logo-log{
+        color: var(--logo-focus-color);
+    }
+
+    .nav-list .nav-contact{
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+
+    .nav-list .list {
+        color: var(--primary-text-color);
+    }
+
+    .nav-list .list:hover,
+    .nav-list .list:focus {
+        color: var(--logo-focus-color);
+    }
+
+    .nav-contact .contact {
+        color: var(--title-text-color);
+    }
+
+    .nav-contact .contact:hover,
+    .nav-contact .contact:focus {
+        color: var(--logo-focus-color);
+    }
+
+/* main content */
+
+    .main{
+
+    }
+
+    /* top panel */
+
+        .panel{
+            background-color: var(--bckgr-color);
+        }
+
+        .heading{
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--bckgr-body-color);
+        }
+        
+        /* background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px; */
+        .button{
+            
+        }
+
+        .button.primary{
+            background-color: var(--logo-focus-color);
+            color: var(--bckgr-body-color);
+        }
+
+    /* deteil */
+
+        .deteil.picture{
+            background-color: var(--bckgr-deteil-color);
+
+        }
+        .deteil-block{
+
+        } 
+
+        .deteil-text{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--primary-text-color);
+        }
+
+        .deteil-text > p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;            
+            color: var(--title-text-color);
+        }
+
+
+       /*  What doing  */
+        
+            .picture{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: var(--primary-text-color);
+            }   
+            .picture-desc{
+                
+            }
+            .picture-img{
+
+            }
+            .picture-pic{
+
+            }
+
+    /* Nasha comanda */
+
+        .comand{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.03em;           
+            color: #212121;
+        }
+        .comand-log{
+
+        }
+        .comand-block{
+
+        }
+        .comand-user{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.03em;           
+            color: #212121;
+        }
+        .comand-user > p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.03em;            
+            color: #757575;
+        }
+
+/* Footer */
+ 
+    .f-adress{
+        background-color: var(--bckgr-color);
+    }
+    .f-adress .logo{
+        font-family: 'Raleway',
+        sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: var(--bckgr-body-color);
+    }
+
+    /* Adress */
+
+        .inform{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;       
+        
+        }
+
+        .inform-block .inform-cont:hover,
+        .inform-block .inform-cont:focus {
+            color: var(--logo-focus-color);          
+        }
+        .inform-block .inform-cont-gr:hover,
+        .inform-block .inform-cont-gr:focus{
+            color: var(--logo-focus-color);
+        }
+
+        .inform-cont{  
+            text-decoration: none;
+            color: var(--bckgr-body-color);
+        }
+        .inform-cont-gr{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);          
+        }
+
+/*  M A I N  P O R T F O L I O  */
+        .portfolio-body{
+            background-color: var(--bckgr-deteil-color);
+        }
+
+    /* Button */
+
+
+    .main-portfolio{
+       
+    }
+    .panel-port{
+
+    }
+    .button-panel{
+
+    }
+    .button-secondary{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;       
+        cursor: pointer;
+        font-family: inherit;
+    }
+    .button-secondary{
+        background-color: var(--picture-color);
+        color: var(--primary-text-color);
+        
+    }
+    .button-secondary:hover,
+    .button-secondary:focus{
+        color: var(--bckgr-body-color);
+        background-color: var(--logo-focus-color);
+    }
+
+    /* Srvices */
+
+    .serv-photo{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: var(--primary-text-color);
+    }
+
+    .serv-photo-text > p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+    }
