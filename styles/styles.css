@@ -1,10 +1,3 @@
-/* 
-font-family: 'Raleway',
-sans-serif;
-font-family: 'Roboto',
-sans-serif;
-*/
-
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -27,6 +20,7 @@ ul {
 }
 
 /* header */
+
     /* navigation */
 
     .logo{
@@ -37,6 +31,7 @@ ul {
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
+        text-decoration: none;
         color: #000000;
     }
 
@@ -45,7 +40,7 @@ ul {
     }
 
     .nav-list .nav-contact{
-        
+
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -54,6 +49,7 @@ ul {
     }
 
     .nav-list .list {
+        text-decoration: none;
         color: var(--primary-text-color);
     }
 
@@ -63,6 +59,7 @@ ul {
     }
 
     .nav-contact .contact {
+        text-decoration: none;
         color: var(--title-text-color);
     }
 
@@ -92,15 +89,16 @@ ul {
             text-transform: uppercase;
             color: var(--bckgr-body-color);
         }
-        
-        /* background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px; */
-        .button{
-            
-        }
 
-        .button.primary{
+        .button-primary{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
             background-color: var(--logo-focus-color);
             color: var(--bckgr-body-color);
         }
@@ -115,7 +113,7 @@ ul {
 
         } 
 
-        .deteil-text{
+        .deteil-block > h3{
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
@@ -125,7 +123,7 @@ ul {
             color: var(--primary-text-color);
         }
 
-        .deteil-text > p{
+        .deteil-text{
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -159,15 +157,17 @@ ul {
     /* Nasha comanda */
 
         .comand{
+            background-color: var(--bckgr-deteil-color);
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
             line-height: 42px;
             text-align: center;
             letter-spacing: 0.03em;           
-            color: #212121;
+            color: var(--primary-text-color);
         }
         .comand-log{
+            
 
         }
         .comand-block{
@@ -180,16 +180,16 @@ ul {
             line-height: 19px;
             text-align: center;
             letter-spacing: 0.03em;           
-            color: #212121;
+            color: var(--primary-text-color);
         }
-        .comand-user > p{
+        .profession{
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
             letter-spacing: 0.03em;            
-            color: #757575;
+            color: var(--title-text-color);
         }
 
 /* Footer */
@@ -286,7 +286,7 @@ ul {
         color: var(--primary-text-color);
     }
 
-    .serv-photo-text > p {
+    .photo-text{
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

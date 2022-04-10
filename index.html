@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,20 +19,20 @@
 
         <nav class="navigation">
 
-            <a href="WebStudio" class="logo"><span class="logo-log">Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span class="logo-log">Web</span>Studio</a>
 
             <ul class="nav-list">
                 <li><a class="list" href="./index.html" >Студия</a></li>
                 <li><a class="list" href="./portfolio.html" >Портфолио</a></li>
                 <li><a class="list" href="Контакты" >Контакты</a></li>
             </ul> 
-            
-            <ul class="nav-contact">
-                <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-                <li><a href="tel:380961111111" class="contact">+38 096 111 11 11</a></li>
-            </ul>
 
         </nav>
+
+        <ul class="nav-contact">
+            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+            <li><a href="tel:380961111111" class="contact">+38 096 111 11 11</a></li>
+        </ul>
 
     </header>
 
@@ -43,7 +43,7 @@
             
             <section class="panel">
                 <h1 class="heading">Эффективные решения для вашего бизнеса</h1>
-                <button class="button primary" type="button">Заказать услугу</button>
+                <button class="button-primary" type="button">Заказать услугу</button>
             </section>
             
             <!-- Deteil -->
@@ -53,21 +53,21 @@
                 <h2 class="skills"> Soft skills</h2>
                 
                 <ul class="deteil-block">
-                    <li class="deteil-text">
+                    <li>
                         <h3>Внимание к деталям</h3>
-                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <p class="deteil-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="deteil-text">
+                    <li>
                         <h3>Пунктуальность</h3>
-                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <p class="deteil-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="deteil-text">
+                    <li>
                         <h3>Планирование</h3>
-                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <p class="deteil-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="deteil-text">
+                    <li>
                         <h3>Современные технологии</h3>
-                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <p class="deteil-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
 
@@ -103,25 +103,25 @@
 
                 <ul class="comand-block">
 
-                    <li class="comand-user">
+                    <li>
                         <img src="imeges/Igor.jpg" alt="photo Igor" width="270">
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                        <h3 class="comand-user">Игорь Демьяненко</h3>
+                        <p class="profession">Product Designer</p>
                     </li>
-                    <li class="comand-user">
+                    <li>
                         <img src="imeges/Olga.jpg" alt="photo Olga" width="270">
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                        <h3 class="comand-user">Ольга Репина</h3>
+                        <p class="profession">Frontend Developer</p>
                     </li>
-                    <li class="comand-user">
+                    <li>
                         <img src="imeges/Nikolai.jpg" alt="photo Nikolai" width="270">
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
+                        <h3 class="comand-user">Николай Тарасов</h3>
+                        <p class="profession">Marketing</p>
                     </li>
-                    <li class="comand-user">
+                    <li>
                         <img src="imeges/Mihail.jpg" alt="photo Mihail" width="270">
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                        <h3 class="comand-user">Михаил Ермаков</h3>
+                        <p class="profession">UI Designer</p>
                     </li>
                 </ul>
             
@@ -132,7 +132,7 @@
 
     <footer class="f-adress">
 
-        <a href="WebStudio" class="logo"><span class="logo-log">Web</span>Studio</a>
+        <a href="./index.html" class="logo"><span class="logo-log">Web</span>Studio</a>
 
         <address class="inform">
             <ul class="inform-block">
