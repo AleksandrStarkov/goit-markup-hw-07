@@ -9,8 +9,7 @@
 }
 
 body {
-    font-family: 'Roboto', 
-    sans-serif;
+    font-family:  Roboto, sans-serif;
     background-color: var(--bckgr-body-color);
     color: var(--primary-text-color);
 }
@@ -24,12 +23,11 @@ ul {
     /* navigation */
 
     .logo{
-        font-family: 'Raleway',
-        sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1.2;
         letter-spacing: 0.03em;
         text-decoration: none;
         color: #000000;
@@ -39,18 +37,16 @@ ul {
         color: var(--logo-focus-color);
     }
 
-    .nav-list .nav-contact{
+    .nav-list .list {
 
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
-    }
-
-    .nav-list .list {
         text-decoration: none;
         color: var(--primary-text-color);
+
     }
 
     .nav-list .list:hover,
@@ -59,8 +55,15 @@ ul {
     }
 
     .nav-contact .contact {
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
         text-decoration: none;
         color: var(--title-text-color);
+
     }
 
     .nav-contact .contact:hover,
@@ -83,7 +86,7 @@ ul {
         .heading{
             font-weight: 900;
             font-size: 44px;
-            line-height: 60px;
+            line-height: 1.4;
             text-align: center;
             letter-spacing: 0.06em;
             text-transform: uppercase;
@@ -91,16 +94,16 @@ ul {
         }
 
         .button-primary{
+
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
+            line-height: 1.9;
             letter-spacing: 0.06em;
             background-color: var(--logo-focus-color);
             color: var(--bckgr-body-color);
+    
         }
 
     /* deteil */
@@ -113,11 +116,11 @@ ul {
 
         } 
 
-        .deteil-block > h3{
+        .deteil-block h3{
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
-            line-height: 16px;
+            line-height: 1.15;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--primary-text-color);
@@ -127,7 +130,7 @@ ul {
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 24px;
+            line-height: 1.7;
             letter-spacing: 0.03em;            
             color: var(--title-text-color);
         }
@@ -139,7 +142,7 @@ ul {
                 font-style: normal;
                 font-weight: 700;
                 font-size: 36px;
-                line-height: 42px;
+                line-height: 1.15;
                 text-align: center;
                 letter-spacing: 0.03em;
                 color: var(--primary-text-color);
@@ -161,14 +164,20 @@ ul {
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
-            line-height: 42px;
+            line-height: 1.5;
             text-align: center;
             letter-spacing: 0.03em;           
             color: var(--primary-text-color);
         }
         .comand-log{
-            
 
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+            letter-spacing: 0.03em;
+            
         }
         .comand-block{
 
@@ -186,7 +195,7 @@ ul {
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 19px;
+            line-height: 1.2;
             text-align: center;
             letter-spacing: 0.03em;            
             color: var(--title-text-color);
@@ -203,7 +212,7 @@ ul {
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1.2;
         letter-spacing: 0.03em;
         color: var(--bckgr-body-color);
     }
@@ -214,7 +223,7 @@ ul {
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 24px;
+            line-height: 1.7;
             letter-spacing: 0.03em;       
         
         }
@@ -258,7 +267,7 @@ ul {
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1.6;
         text-align: center;
         letter-spacing: 0.03em;       
         cursor: pointer;
@@ -277,20 +286,24 @@ ul {
 
     /* Srvices */
 
-    .serv-photo{
+    .serv-photo .photo{
+
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
-        line-height: 36px;
+        line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
+
     }
 
     .photo-text{
+
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.9;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
-    }
+        
+    } 
