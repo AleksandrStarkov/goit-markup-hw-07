@@ -24,8 +24,7 @@ ul {
 
     .logo{
         font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 700;
+        
         font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -39,7 +38,6 @@ ul {
 
     .nav-list .list {
 
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
@@ -48,15 +46,18 @@ ul {
         color: var(--primary-text-color);
 
     }
-
+    
     .nav-list .list:hover,
     .nav-list .list:focus {
         color: var(--logo-focus-color);
     }
 
+    .nav-list .list.current{
+        color: var(--logo-focus-color);
+    }
+
     .nav-contact .contact {
 
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.15;
@@ -96,7 +97,7 @@ ul {
         .button-primary{
 
             font-family: 'Roboto', sans-serif;
-            font-style: normal;
+            
             font-weight: 700;
             font-size: 16px;
             line-height: 1.9;
@@ -117,8 +118,7 @@ ul {
         } 
 
         .deteil-block h3{
-            font-style: normal;
-            font-weight: 700;
+
             font-size: 14px;
             line-height: 1.15;
             letter-spacing: 0.03em;
@@ -127,8 +127,7 @@ ul {
         }
 
         .deteil-text{
-            font-style: normal;
-            font-weight: 400;
+            
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;            
@@ -139,15 +138,16 @@ ul {
        /*  What doing  */
         
             .picture{
-                font-style: normal;
+                
+            }   
+            .picture-desc{
+
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 1.15;
                 text-align: center;
                 letter-spacing: 0.03em;
                 color: var(--primary-text-color);
-            }   
-            .picture-desc{
                 
             }
             .picture-img{
@@ -161,7 +161,6 @@ ul {
 
         .comand{
             background-color: var(--bckgr-deteil-color);
-            font-style: normal;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.5;
@@ -171,7 +170,6 @@ ul {
         }
         .comand-log{
 
-            font-style: normal;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.16;
@@ -183,7 +181,7 @@ ul {
 
         }
         .comand-user{
-            font-style: normal;
+            
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
@@ -192,7 +190,7 @@ ul {
             color: var(--primary-text-color);
         }
         .profession{
-            font-style: normal;
+            
             font-weight: 400;
             font-size: 16px;
             line-height: 1.2;
@@ -209,7 +207,6 @@ ul {
     .f-adress .logo{
         font-family: 'Raleway',
         sans-serif;
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
