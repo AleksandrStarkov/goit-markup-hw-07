@@ -8,10 +8,21 @@
     --picture-color:#F5F4FA;
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
 body {
     font-family:  Roboto, sans-serif;
     background-color: var(--bckgr-body-color);
     color: var(--primary-text-color);
+
+    outline: 2px solid red;
+
 }
 
 ul {
@@ -36,6 +47,11 @@ ul {
         color: var(--logo-focus-color);
     }
 
+    .nav-list{
+        margin: 0;
+        padding: 0;
+    }
+
     .nav-list .list {
 
         font-weight: 500;
@@ -54,6 +70,11 @@ ul {
 
     .nav-list .list.current{
         color: var(--logo-focus-color);
+    }
+
+    .nav-contact{
+        margin: 0;
+        padding: 0;
     }
 
     .nav-contact .contact {
@@ -81,30 +102,51 @@ ul {
     /* top panel */
 
         .panel{
+
+            padding-top: 200px;
+            padding-bottom: 280px;
+            text-align: center;
+            
             background-color: var(--bckgr-color);
+            outline: 2px solid red;
+            
+            
         }
 
         .heading{
+            
+            margin: 0;
+            
+            margin-left: auto;
+            margin-right: auto;
+            width: 696px;
+            height: 120px;
+            margin-bottom: 30px;
             font-weight: 900;
             font-size: 44px;
             line-height: 1.4;
-            text-align: center;
+           
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: var(--bckgr-body-color);
+            outline: 2px solid yellow;
         }
 
         .button-primary{
 
-            font-family: 'Roboto', sans-serif;
-            
+            min-width: 200px;
+            display: inline-block;
+            border-radius: 4px;
+            padding: 10px 32px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;           
             font-weight: 700;
             font-size: 16px;
             line-height: 1.9;
             letter-spacing: 0.06em;
             background-color: var(--logo-focus-color);
             color: var(--bckgr-body-color);
-    
+            
         }
 
     /* deteil */
@@ -113,12 +155,24 @@ ul {
             background-color: var(--bckgr-deteil-color);
 
         }
-        .deteil-block{
 
-        } 
+        .deteil{
+
+            outline: 10px solid green
+        }
+
+        .deteil-bl{
+            
+        }
+        .skills{
+            margin: 0;
+        }
 
         .deteil-block h3{
 
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
             font-size: 14px;
             line-height: 1.15;
             letter-spacing: 0.03em;
@@ -126,8 +180,16 @@ ul {
             color: var(--primary-text-color);
         }
 
+        .deteil-block {
+            margin: 0;
+            padding: 0;
+            outline: 10px solid purple;
+           
+        }
+
         .deteil-text{
-            
+            margin: 0;
+            padding: 0;
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;            
@@ -142,6 +204,8 @@ ul {
             }   
             .picture-desc{
 
+                margin: 0;
+                padding: 0;
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 1.15;
@@ -151,6 +215,8 @@ ul {
                 
             }
             .picture-img{
+                margin: 0;
+                padding: 0;
 
             }
             .picture-pic{
@@ -170,6 +236,8 @@ ul {
         }
         .comand-log{
 
+            margin: 0;
+            padding: 0;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.16;
@@ -178,10 +246,13 @@ ul {
             
         }
         .comand-block{
+            margin: 0;
+            padding: 0;
 
         }
         .comand-user{
-            
+            margin: 0;
+            padding: 0;
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
@@ -190,7 +261,8 @@ ul {
             color: var(--primary-text-color);
         }
         .profession{
-            
+            margin: 0;
+            padding: 0;
             font-weight: 400;
             font-size: 16px;
             line-height: 1.2;
@@ -223,6 +295,11 @@ ul {
             line-height: 1.7;
             letter-spacing: 0.03em;       
         
+        }
+
+        .inform-block{
+            margin: 0;
+            padding: 0;
         }
 
         .inform-block .inform-cont:hover,
@@ -261,6 +338,11 @@ ul {
 
     }
     .button-secondary{
+
+        min-width: 73px;
+        display: inline-block;
+        border-radius: 4px;
+        padding: 6px 22px;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
