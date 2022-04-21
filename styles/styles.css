@@ -34,6 +34,7 @@ ul {
     /* navigation */
 
     .logo{
+        
         margin-right: 93px;
         font-family: 'Raleway', sans-serif;
         font-size: 26px;
@@ -47,13 +48,17 @@ ul {
         color: var(--logo-focus-color);
     }
     
+    .header{
+        border-bottom: 1px solid #ECECEC;
+    }
+    
     .header .conteiner{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 24px;
         margin-bottom: 25px;
-            outline: 2px solid red;
+        /* outline: 2px solid red; */
     }
     .navigation {
        display: flex;
@@ -67,10 +72,19 @@ ul {
         margin: 0;
         padding: 0;
     }
+    /* .nav-list li{
+        margin-right: 50px;
+    }
+    .nav-list li:last-child{
+        margin-right: 0;
+    } */
+    .nav-list li + li{
+        margin-left: 50px;
+    }
 
     .nav-list .list {
 
-        margin-right: 50px;
+        
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
@@ -94,6 +108,13 @@ ul {
         margin: 0;
         padding: 0;
     }
+    .nav-contact li{
+        margin-left: 50px;
+    }
+    .nav-contact li:first-child{
+        margin-left: 0;
+    }
+
 
     .nav-contact .contact {
 
@@ -111,7 +132,7 @@ ul {
         color: var(--logo-focus-color);
     }
     .contact{
-        margin-left: 50px;
+        
     }
     .contact :nth-child(2n){
         margin: auto;
@@ -133,7 +154,7 @@ ul {
             text-align: center;
             
             background-color: var(--bckgr-color);
-            outline: 2px solid chartreuse;
+            /* outline: 2px solid chartreuse; */
             
             
         }
@@ -154,7 +175,7 @@ ul {
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: var(--bckgr-body-color);
-            outline: 2px solid yellow;
+            /* outline: 2px solid yellow; */
         }
 
         .button-primary{
@@ -184,7 +205,7 @@ ul {
         .deteil{
 
             margin-bottom: 94px;
-            outline: 10px solid green
+            /* outline: 10px solid green */
         }
 
         .deteil-bl{
@@ -210,8 +231,12 @@ ul {
             justify-content: space-between;
             margin: 0;
             padding: 0;
-            outline: 10px solid purple;
+            /* outline: 10px solid purple; */
            
+        }
+        
+        .deteil-block li+li{
+            margin-left: 30px;
         }
 
         .deteil-text{
@@ -256,7 +281,6 @@ ul {
     /* Nasha comanda */
 
         .comand{
-            /* margin-bottom: 94px;         */
             
             background-color: var(--bckgr-deteil-color);
             font-weight: 700;
@@ -266,7 +290,7 @@ ul {
             letter-spacing: 0.03em;           
             color: var(--primary-text-color);
         }
-        .comand.conteiner{
+        .comand .conteiner{
             padding-bottom: 94px;
         }
         .comand-log{
@@ -375,11 +399,11 @@ ul {
 /*  M A I N  P O R T F O L I O  */
 
         .portfolio-body{
-            background-color: var(--bckgr-deteil-color);
+            background-color: var(--bckgr-body-color);
         }
-        .main-portfolio section{
-            padding-top: 94px;
-            padding-bottom: 94px;
+        .main-portfolio {
+            margin-top: 94px;
+            margin-bottom: 94px;
         }
 
     /* Button */
@@ -399,8 +423,8 @@ ul {
         
     }
     
-    .button-panel li {
-        margin-right: 8px;
+    .button-panel li + li{
+        margin-left: 8px;
     }
     .button-secondary{
 
@@ -444,7 +468,6 @@ ul {
     .serv-photo{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 0;
@@ -453,11 +476,13 @@ ul {
         margin-right: 30px;
         margin-bottom: 30px;
     }
-    .serv-photo li:nth-child(n+3){
-        margin-right: 0;   
+    .serv-photo li:nth-child(3n){
+        margin-right: 0; 
     }
-    .serv-photo li:nth-child(n+7){
+    .serv-photo li:nth-last-child(-n+3){
         margin-bottom: 0;
+    }
+    
     }
     .serv-photo img{
         margin: 0;
@@ -468,7 +493,7 @@ ul {
     .photo-text{
 
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 20px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
