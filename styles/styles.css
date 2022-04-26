@@ -204,8 +204,8 @@ ul {
 
         .deteil{
 
-            margin-top: 94px;
-            margin-bottom: 94px;
+            padding-top: 94px;
+            padding-bottom: 94px;
             /* outline: 10px solid green */
         }
 
@@ -257,7 +257,7 @@ ul {
        /*  What doing  */
         
             .picture{
-                margin-bottom: 94px;
+                padding-bottom: 94px;
             }   
             .picture-desc{
 
@@ -318,6 +318,7 @@ ul {
             padding: 0;
         }
         .photo-prof{
+            display: block;
             margin: 0;
             padding: 0;
         }
@@ -325,7 +326,7 @@ ul {
             margin-bottom: 10px;
         } 
         .comand-prof{
-            padding-top: 20px;
+            padding-top: 30px;
             padding-bottom: 30px;
         } 
 
