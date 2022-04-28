@@ -14,7 +14,6 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--bckgr-body-color);
     color: var(--primary-text-color);
-    width: 1600px;
     margin: auto;
 
 }
@@ -155,11 +154,18 @@ ul {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: var(--bckgr-color);
-    background-image: url(../imeges/overlay.jpg);
+    /* background: linear-gradient(to left, rgba(47, 48, 58, 0.4)), url(../imeges/overlay.jpg); */
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../imeges/overlay.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
+
     /* outline: 2px solid chartreuse; */
     /* url(../imeges/overlay.jpg) */
 
@@ -203,10 +209,6 @@ ul {
 
 /* deteil */
 
-.deteil.picture {
-    background-color: var(--bckgr-deteil-color);
-
-}
 
 .deteil {
 
@@ -214,8 +216,6 @@ ul {
     padding-bottom: 94px;
     /* outline: 10px solid green */
 }
-
-.deteil-bl {}
 
 .skills {
     font-size: 0;
@@ -248,6 +248,36 @@ ul {
 
 .deteil-block li+li {
     margin-left: 30px;
+}
+
+.deteil-list::before {
+
+    content: "";
+    display: block;
+    height: 120px;
+    background-size: contein;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+
+.icon-antena::before {
+    background-image: url(../imeges/icon/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../imeges/icon/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../imeges/icon/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../imeges/icon/astronaut.svg);
 }
 
 .deteil-text {
