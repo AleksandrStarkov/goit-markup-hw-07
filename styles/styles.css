@@ -124,6 +124,7 @@ ul {
     margin-right: 10px;
     padding: 0;
     border: none;
+    list-style: none;
     background-color: transparent;
 }
 
@@ -352,8 +353,6 @@ ul {
     color: var(--primary-text-color);
 }
 
-.comand .conteiner {}
-
 .comand-log {
 
     margin-top: 0;
@@ -408,6 +407,7 @@ ul {
 
 .profession {
     margin: 0;
+    margin-bottom: 16px;
     padding: 0;
     font-weight: 400;
     font-size: 16px;
@@ -415,6 +415,132 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+}
+
+.button-comand {
+    display: flex;
+    margin: 0;
+    padding: 0 32px;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.button-comand li {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    /* box-shadow: none; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-icon {
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.button-instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.button-twitter {
+    width: 20px;
+    height: 20px;
+}
+
+.button-facebook {
+    width: 20px;
+    height: 20px;
+}
+
+.button-linkedin {
+    width: 20px;
+    height: 20px;
+}
+
+/* CLIENTS */
+
+.clients {
+    padding: 94px 0;
+}
+
+.clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.button-clients {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.button-user {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    background-color: transparent;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+/* .button-user:hover,
+.button-user:focus {
+    border-color: var(--logo-focus-color);
+} */
+
+
+.button-group {
+    width: 41px;
+    height: 46.7px;
+}
+
+/* .button-group:hover {
+    fill: var(--logo-focus-color);
+} */
+
+.button-group2 {
+    width: 40px;
+    height: 52px;
+}
+
+.button-group3 {
+    width: 43.46px;
+    height: 41.18px;
+}
+
+.button-group4 {
+    width: 84.44px;
+    height: 40.62px;
+}
+
+.button-group5 {
+    width: 62.54px;
+    height: 45.43px;
+}
+
+.button-group6 {
+    width: 93.79px;
+    height: 43.93px;
 }
 
 /* Footer */
