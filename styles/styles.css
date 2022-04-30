@@ -119,6 +119,23 @@ ul {
     margin-left: 0;
 }
 
+.button {
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.button-mail {
+    width: 16px;
+    height: 12px;
+}
+
+.button-telephone {
+    width: 10px;
+    height: 16px;
+}
 
 .nav-contact .contact {
 
