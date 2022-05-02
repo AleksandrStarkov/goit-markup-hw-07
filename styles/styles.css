@@ -453,14 +453,17 @@ ul {
 
 }
 
-.button-icon:hover {
+.button-icon:hover,
+.button-icon:focus {
     background-color: var(--logo-focus-color);
 }
 
 .button-icon:hover .photo-instagram,
 .button-icon:hover .photo-twitter,
 .button-icon:hover .photo-facebook,
-.button-icon:hover .photo-linkedin,
+.button-icon:hover .photo-linkedin {
+    fill: var(--bckgr-body-color);
+}
 
 .button-icon:focus .photo-instagram,
 .button-icon:focus .photo-twitter,
