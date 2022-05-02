@@ -119,25 +119,6 @@ ul {
     margin-left: 0;
 }
 
-.button {
-    margin: 0;
-    margin-right: 10px;
-    padding: 0;
-    border: none;
-    list-style: none;
-    background-color: transparent;
-}
-
-.button-mail {
-    width: 16px;
-    height: 12px;
-}
-
-.button-telephone {
-    width: 10px;
-    height: 16px;
-}
-
 .nav-contact .contact {
 
     font-weight: 500;
@@ -149,12 +130,23 @@ ul {
 
 }
 
+.nav-mail {
+    display: flex;
+    margin-right: 10px;
+    fill: currentColor;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-contact .contact:hover,
 .nav-contact .contact:focus {
     color: var(--logo-focus-color);
 }
 
-.contact {}
+.nav-mail:hover,
+.nav-mail:focus {
+    fill: currentColor;
+}
 
 .contact :nth-child(2n) {
     margin: auto;
@@ -392,6 +384,8 @@ ul {
 .comand-prof {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: var(--bckgr-body-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .comand-user {
@@ -417,7 +411,7 @@ ul {
     color: var(--title-text-color);
 }
 
-.button-comand {
+.comand-user {
     display: flex;
     margin: 0;
     padding: 0 32px;
@@ -426,48 +420,57 @@ ul {
 
 }
 
-.button-comand li {
-    display: flex;
+.comand-user li {
+
     margin: 0;
+    padding: 0;
+    box-shadow: none;
+    width: 44px;
+    height: 44px;
+
+}
+
+.button-icon {
+    display: flex;
     padding: 0;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    border: none;
     background-color: transparent;
-    /* box-shadow: none; */
     justify-content: center;
     align-items: center;
 
 }
 
-.button-icon {
-    padding: 0;
-    width: 44px;
-    height: 44px;
-    border: none;
-    background-color: transparent;
-
-}
-
-.button-instagram {
+.button-icon .photo-instagram,
+.photo-twitter,
+.photo-facebook,
+.photo-linkedin {
     width: 20px;
     height: 20px;
+    fill: #AFB1B8;
+
 }
 
-.button-twitter {
-    width: 20px;
-    height: 20px;
+.button-icon:hover {
+    background-color: var(--logo-focus-color);
 }
 
-.button-facebook {
-    width: 20px;
-    height: 20px;
+.button-icon:hover .photo-instagram,
+.button-icon:hover .photo-twitter,
+.button-icon:hover .photo-facebook,
+.button-icon:hover .photo-linkedin,
+
+.button-icon:focus .photo-instagram,
+.button-icon:focus .photo-twitter,
+.button-icon:focus .photo-facebook,
+.button-icon:focus .photo-linkedin {
+
+    fill: var(--bckgr-body-color);
 }
 
-.button-linkedin {
-    width: 20px;
-    height: 20px;
-}
+
 
 /* CLIENTS */
 
@@ -501,22 +504,28 @@ ul {
     background-color: transparent;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
 }
 
-/* .button-user:hover,
-.button-user:focus {
-    border-color: var(--logo-focus-color);
-} */
 
 
 .button-group {
+    fill: currentColor;
+
     width: 41px;
     height: 46.7px;
+
 }
 
-/* .button-group:hover {
-    fill: var(--logo-focus-color);
-} */
+.button-group:hover {
+    fill: currentColor;
+}
+
+.button-user:hover,
+.button-user:focus {
+    border-color: var(--logo-focus-color);
+}
+
 
 .button-group2 {
     width: 40px;
@@ -547,22 +556,94 @@ ul {
 
 .f-adress {
     background-color: var(--bckgr-color);
-}
-
-.f-adress {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.f-adress .conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
 .f-adress .logo {
     margin: 0;
-    font-family: 'Raleway',
-        sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--bckgr-body-color);
+}
+
+.f-button {
+    margin-left: 70px;
+
+}
+
+.f-button h3 {
+    text-align: left;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--bckgr-body-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+
+}
+
+.f-under {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.f-under li {
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+
+}
+
+.f-under li+li {
+
+    margin-left: 10px;
+    border: none;
+
+}
+
+.f-under .button {
+    padding: 0;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-under .button-instagram,
+.f-under .button-twitter,
+.f-under .button-facebook,
+.f-under .button-linkedin {
+    fill: var(--bckgr-body-color);
+    width: 20px;
+    height: 20px;
+
+}
+
+.f-under .button:hover,
+.f-under .button:focus {
+    background-color: var(--logo-focus-color);
 }
 
 /* Adress */
@@ -701,6 +782,13 @@ ul {
 
 .serv-photo li:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+
+.serv-photo li:hover,
+.serv-photo li:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .photo-bord {
