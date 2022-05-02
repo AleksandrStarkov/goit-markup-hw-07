@@ -496,61 +496,43 @@ ul {
     justify-content: space-between;
 }
 
+.button-clients li {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+}
+
 .button-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     width: 170px;
     height: 92px;
     background-color: transparent;
-    border: 1px solid #AFB1B8;
+    border: 1px solid currentColor;
     border-radius: 4px;
+    color: #AFB1B8;
 
 }
-
-
 
 .button-group {
     fill: currentColor;
-
-    width: 41px;
-    height: 46.7px;
+    width: 106px;
+    height: 60px;
 
 }
 
-.button-group:hover {
-    fill: currentColor;
-}
+
 
 .button-user:hover,
 .button-user:focus {
     border-color: var(--logo-focus-color);
+    color: var(--logo-focus-color);
 }
 
-
-.button-group2 {
-    width: 40px;
-    height: 52px;
-}
-
-.button-group3 {
-    width: 43.46px;
-    height: 41.18px;
-}
-
-.button-group4 {
-    width: 84.44px;
-    height: 40.62px;
-}
-
-.button-group5 {
-    width: 62.54px;
-    height: 45.43px;
-}
-
-.button-group6 {
-    width: 93.79px;
-    height: 43.93px;
-}
 
 /* Footer */
 
