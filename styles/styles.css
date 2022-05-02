@@ -525,8 +525,6 @@ ul {
 
 }
 
-
-
 .button-user:hover,
 .button-user:focus {
     border-color: var(--logo-focus-color);
