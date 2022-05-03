@@ -698,6 +698,7 @@ ul {
     margin-bottom: 50px;
     padding-left: 0;
 
+
 }
 
 .button-panel li+li {
@@ -718,6 +719,7 @@ ul {
     letter-spacing: 0.03em;
     cursor: pointer;
     font-family: inherit;
+    border: none;
 }
 
 .button-secondary {
