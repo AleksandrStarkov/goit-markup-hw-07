@@ -388,7 +388,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.comand-user {
+.comand.user {
     margin: 0;
     padding: 0;
     font-weight: 500;
@@ -417,7 +417,6 @@ ul {
     padding: 0 32px;
     justify-content: space-between;
     list-style: none;
-
 }
 
 .comand-user li {
