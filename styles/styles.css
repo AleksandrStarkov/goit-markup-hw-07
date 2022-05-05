@@ -6,6 +6,7 @@
     --bckgr-deteil-color: #E5E5E5;
     --bckgr-body-color: #FFFFFF;
     --picture-color: #F5F4FA;
+    --animation: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -74,25 +75,21 @@ ul {
     padding: 0;
 }
 
-/* .nav-list li{
-        margin-right: 50px;
-    }
-    .nav-list li:last-child{
-        margin-right: 0;
-    } */
 .nav-list li+li {
     margin-left: 50px;
 }
 
 .nav-list .list {
 
-
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--primary-text-color);
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -103,7 +100,24 @@ ul {
 
 .nav-list .list.current {
     color: var(--logo-focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-list .list:hover:after,
+.nav-list .list:focus:after,
+.nav-list .list.current:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-focus-color);
+    bottom: 0;
+    left: 0;
+}
+
+
+
 
 .nav-contact {
     display: flex;
@@ -153,7 +167,7 @@ ul {
 
 /* main content */
 
-.main {}
+
 
 /* top panel */
 
@@ -169,14 +183,9 @@ ul {
     margin-right: auto;
 
     background-color: var(--bckgr-color);
-    /* background: linear-gradient(to left, rgba(47, 48, 58, 0.4)), url(../imeges/overlay.jpg); */
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../imeges/overlay.jpg);
     background-repeat: no-repeat;
-    /* background-position: center; */
-
-    /* outline: 2px solid chartreuse; */
-    /* url(../imeges/overlay.jpg) */
 
 }
 
@@ -215,6 +224,67 @@ ul {
     color: var(--bckgr-body-color);
 
 }
+
+.button-primary:hover {
+    background-color: #188CE8;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 521px;
+    min-height: 581px;
+    padding: 15px;
+    background-color: var(--bckgr-body-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-button {
+
+    padding: 0;
+    margin: 0;
+    margin-left: 490px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+
+}
+
+.modal-button-icon {
+
+    width: 20px;
+    height: 20px;
+}
+
 
 /* deteil */
 
@@ -327,7 +397,32 @@ ul {
 
 }
 
-.picture-pic {}
+.picture-pic img {
+    display: block;
+}
+
+.picture-pic {
+    position: relative;
+}
+
+
+.picture-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 27px 0;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bckgr-body-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
+
 
 /* Nasha comanda */
 
@@ -675,7 +770,6 @@ ul {
     background-color: var(--bckgr-body-color);
 }
 
-.main-portfolio {}
 
 .content-portfolio {
     padding-top: 94px;
@@ -756,6 +850,7 @@ ul {
 }
 
 .serv-photo li {
+
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -768,14 +863,20 @@ ul {
     margin-bottom: 0;
 }
 
-.serv-photo li:hover,
-.serv-photo li:focus {
+.serv-photo a {
+    display: block;
+}
+
+.serv-photo a:hover,
+.serv-photo a:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+
 .photo-bord {
+
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
 }
@@ -797,3 +898,40 @@ ul {
     color: var(--title-text-color);
 
 }
+
+.photo-block {
+    position: relative;
+
+}
+
+.photo-window {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 63px 24px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--bckgr-body-color);
+    background: rgba(33, 150, 243, 0.9);
+
+
+}
+
+.serv-photo a:hover .photo-window,
+.serv-photo a:focus .photo-window {
+    opacity: 1;
+
+
+
+}
+
+/* .photo-block:hover {
+    transform: translatey(0);
+} */
