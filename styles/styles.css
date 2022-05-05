@@ -207,7 +207,7 @@ ul {
 }
 
 .button-primary {
-
+    border: none;
     min-width: 200px;
     display: inline-block;
     border-radius: 4px;
