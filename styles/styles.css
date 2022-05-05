@@ -541,7 +541,9 @@ ul {
     background-color: transparent;
     justify-content: center;
     align-items: center;
-    transition: background-color var(--animation);
+    transition: background-color var(--animation),
+        background-color var(--animation),
+        box-shadow var(--animation);
 
 }
 
