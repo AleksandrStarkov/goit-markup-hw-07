@@ -75,27 +75,72 @@
                 <use href="./imeges/icon/symbol-defs.svg#vector"></use>
               </svg>
             </button>
-            <form>
-              <p>Оставьте свои данные, мы вам перезвоним</p>
 
-              <lebel>Имя</lebel>
-              <input type="text" name="" id="" />
+            <p class="model-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="form">
+              <label class="form-label">
+                <span class="form-text">Имя</span>
 
-              <lebel>Телефон</lebel>
-              <input type="text" name="" id="" />
+                <span class="form-icon-wrap">
+                  <input type="text" name="name" class="form-input" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use
+                      class="form-pic"
+                      href="./imeges/icon/symbol-defs.svg#person"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
 
-              <lebel>Почта</lebel>
-              <input type="text" name="" id="" placeholder="Введите текст" />
+              <label class="form-label">
+                <span class="form-text">Телефон</span>
 
-              <label>Комментарий</label>
-              <textarea name="" id="" rows="8"></textarea>
+                <span class="form-icon-wrap">
+                  <input type="tel" name="tel" class="form-input" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use
+                      class="form-pic"
+                      href="./imeges/icon/symbol-defs.svg#phone"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
 
-              <input type="checkbox" name="" id="" />
-              <label for=""
-                >Соглашаюсь с рассылкой и принимаю Условия договора</label
-              >
+              <label class="form-label">
+                <span class="form-text">Почта</span>
 
-              <button type="submit">Отправить</button>
+                <span class="form-icon-wrap">
+                  <input type="email" name="mail" class="form-input" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use
+                      class="form-pic"
+                      href="./imeges/icon/symbol-defs.svg#email"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
+
+              <label class="form-label coment">
+                <span class="form-text">Комментарий</span>
+                <textarea
+                  name="coment"
+                  id="coment"
+                  rows="10"
+                  class="form-input form-textarea"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+
+              <label class="check option">
+                <input type="checkbox" class="check-input" />
+                <span class="check-box"></span>
+                <span class="form-checkbox-text"
+                  >Соглашаюсь с рассылкой и принимаю &nbsp</span
+                >
+                <a href="#" class="form-checkbox-link">Условия договора</a>
+              </label>
+
+              <button type="submit" class="form-button">Отправить</button>
             </form>
           </div>
         </div>
@@ -514,11 +559,28 @@
             </li>
           </ul>
         </div>
-        <form action="">
+        <form class="footer-form">
           <h3>Подпишитесь на рассылку</h3>
-          <label for=""></label>
-          <input type="text" name="" placeholder="email" />
-          <button type="submit">Подписаться</button>
+
+          <span class="footer-form-wrap">
+            <label>
+              <input
+                type="text"
+                name=""
+                placeholder="E-mail"
+                class="footer-form-input"
+              />
+            </label>
+
+            <div class="footer-icon-wrap">
+              <button type="submit" class="footer-button-sub">
+                Подписаться
+              </button>
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./imeges/icon/symbol-defs.svg#telegram"></use>
+              </svg>
+            </div>
+          </span>
         </form>
       </div>
     </footer>
