@@ -6,10 +6,10 @@
     display: block;
     text-align: left;
   }
-  &__label:not(:last-child) {
+  &__label {
     margin-bottom: 10px;
   }
-  &__oment {
+  &__label-coment {
     margin-bottom: 20px;
   }
   &__text {
@@ -41,9 +41,7 @@
     border-radius: 4px;
     transition: border-color var(--animation);
   }
-  &__textarea {
-    height: 120px;
-  }
+
   &__icon {
     fill: var(--primary-text-color);
     transition: fill var(--animation);
@@ -65,6 +63,10 @@
 
   &__input {
     padding-left: 40px;
+  }
+  &__textarea {
+    height: 120px;
+    padding-left: 20px;
   }
 
   &__icon {
