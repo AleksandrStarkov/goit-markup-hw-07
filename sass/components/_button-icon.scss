@@ -1,0 +1,42 @@
+.button-icon {
+  display: flex;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--animation),
+    background-color var(--animation), box-shadow var(--animation);
+}
+
+.button-icon .photo-instagram,
+.photo-twitter,
+.photo-facebook,
+.photo-linkedin {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: color var(--animation);
+}
+
+.button-icon:hover,
+.button-icon:focus {
+  background-color: var(--logo-focus-color);
+}
+
+.button-icon:hover .photo-instagram,
+.button-icon:hover .photo-twitter,
+.button-icon:hover .photo-facebook,
+.button-icon:hover .photo-linkedin {
+  fill: var(--bckgr-body-color);
+}
+
+.button-icon:focus .photo-instagram,
+.button-icon:focus .photo-twitter,
+.button-icon:focus .photo-facebook,
+.button-icon:focus .photo-linkedin {
+  fill: var(--bckgr-body-color);
+}

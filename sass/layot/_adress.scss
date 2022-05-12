@@ -1,0 +1,39 @@
+.inform {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.inform-block {
+  margin: 0;
+  padding: 0;
+}
+
+.inform-block li {
+  margin-bottom: 9px;
+}
+
+.inform-block .inform-cont:hover,
+.inform-block .inform-cont:focus {
+  color: var(--logo-focus-color);
+}
+
+.inform-block .inform-cont-gr:hover,
+.inform-block .inform-cont-gr:focus {
+  color: var(--logo-focus-color);
+}
+
+.inform-cont {
+  text-decoration: none;
+  color: var(--bckgr-body-color);
+  transition: color var(--animation);
+}
+
+.inform-cont-gr {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation);
+}

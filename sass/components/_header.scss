@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  /* outline: 2px solid red; */
+}
