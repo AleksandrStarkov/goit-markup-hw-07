@@ -7,15 +7,17 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-}
 
-.modal-button-icon {
-  width: 11px;
-  height: 11px;
-  transition: fill var(--animation);
-}
+  &:hover {
+    .modal-button-icon,
+    .modal-button-icon {
+      fill: var(--logo-focus-color);
+    }
+  }
 
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
-  fill: var(--logo-focus-color);
+  .modal-button-icon {
+    width: 11px;
+    height: 11px;
+    transition: fill var(--animation);
+  }
 }

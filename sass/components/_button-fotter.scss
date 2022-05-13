@@ -34,7 +34,7 @@
   border: none;
 }
 
-.f-under .button {
+.button {
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -46,18 +46,18 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--logo-focus-color);
+  }
 }
 
-.f-under .button-instagram,
-.f-under .button-twitter,
-.f-under .button-facebook,
-.f-under .button-linkedin {
+.button-instagram,
+.button-twitter,
+.button-facebook,
+.button-linkedin {
   fill: var(--bckgr-body-color);
   width: 20px;
   height: 20px;
-}
-
-.f-under .button:hover,
-.f-under .button:focus {
-  background-color: var(--logo-focus-color);
 }

@@ -14,7 +14,7 @@
   margin-left: 50px;
 }
 
-.nav-list .list {
+.list {
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
@@ -24,26 +24,26 @@
   color: var(--primary-text-color);
   position: relative;
   transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-focus-color);
+  }
 }
 
-.nav-list .list:hover,
-.nav-list .list:focus {
+.list.current {
   color: var(--logo-focus-color);
-}
 
-.nav-list .list.current {
-  color: var(--logo-focus-color);
-}
-
-.nav-list .list.current:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--logo-focus-color);
-  bottom: 0;
-  left: 0;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-focus-color);
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .nav-contact {
@@ -54,13 +54,13 @@
 
 .nav-contact li {
   margin-left: 50px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
-.nav-contact li:first-child {
-  margin-left: 0;
-}
-
-.nav-contact .contact {
+.contact {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -70,23 +70,22 @@
   text-decoration: none;
   color: var(--title-text-color);
   transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-focus-color);
+  }
+  &:nth-child(2n) {
+    margin: auto;
+  }
 }
 
 .nav-mail {
   margin-right: 10px;
   fill: currentColor;
-}
 
-.nav-contact .contact:hover,
-.nav-contact .contact:focus {
-  color: var(--logo-focus-color);
-}
-
-.nav-mail:hover,
-.nav-mail:focus {
-  fill: currentColor;
-}
-
-.contact :nth-child(2n) {
-  margin: auto;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
 }

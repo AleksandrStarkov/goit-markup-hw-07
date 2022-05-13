@@ -50,11 +50,11 @@
   color: var(--bckgr-body-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--animation);
-}
 
-.footer-button-sub:hover,
-.footer-button-sub:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .footer-form-wrap {

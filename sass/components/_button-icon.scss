@@ -10,6 +10,25 @@
   align-items: center;
   transition: background-color var(--animation),
     background-color var(--animation), box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--logo-focus-color);
+
+    .photo-instagram,
+    .photo-twitter,
+    .photo-facebook,
+    .photo-linkedin {
+      fill: var(--bckgr-body-color);
+    }
+
+    .photo-instagram,
+    .photo-twitter,
+    .photo-facebook,
+    .photo-linkedin {
+      fill: var(--bckgr-body-color);
+    }
+  }
 }
 
 .button-icon .photo-instagram,
@@ -20,23 +39,4 @@
   height: 20px;
   fill: #afb1b8;
   transition: color var(--animation);
-}
-
-.button-icon:hover,
-.button-icon:focus {
-  background-color: var(--logo-focus-color);
-}
-
-.button-icon:hover .photo-instagram,
-.button-icon:hover .photo-twitter,
-.button-icon:hover .photo-facebook,
-.button-icon:hover .photo-linkedin {
-  fill: var(--bckgr-body-color);
-}
-
-.button-icon:focus .photo-instagram,
-.button-icon:focus .photo-twitter,
-.button-icon:focus .photo-facebook,
-.button-icon:focus .photo-linkedin {
-  fill: var(--bckgr-body-color);
 }

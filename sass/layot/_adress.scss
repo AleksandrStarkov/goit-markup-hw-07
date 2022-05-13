@@ -16,24 +16,24 @@
   margin-bottom: 9px;
 }
 
-.inform-block .inform-cont:hover,
-.inform-block .inform-cont:focus {
-  color: var(--logo-focus-color);
-}
-
-.inform-block .inform-cont-gr:hover,
-.inform-block .inform-cont-gr:focus {
-  color: var(--logo-focus-color);
-}
-
 .inform-cont {
   text-decoration: none;
   color: var(--bckgr-body-color);
   transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-focus-color);
+  }
 }
 
 .inform-cont-gr {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-focus-color);
+  }
 }

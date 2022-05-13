@@ -13,10 +13,10 @@
   background-color: var(--logo-focus-color);
   color: var(--bckgr-body-color);
   transition: background var(--animation), box-shadow var(--animation);
-}
 
-.form-button:hover,
-.form-button:focus {
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

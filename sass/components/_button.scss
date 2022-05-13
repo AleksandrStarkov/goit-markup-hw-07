@@ -13,8 +13,8 @@
   background-color: var(--logo-focus-color);
   color: var(--bckgr-body-color);
   transition: background-color var(--animation);
-}
 
-.button-primary:hover {
-  background-color: #188ce8;
+  &:hover {
+    background-color: #188ce8;
+  }
 }

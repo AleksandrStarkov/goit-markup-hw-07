@@ -89,8 +89,7 @@ ul {
   transition: background var(--animation), box-shadow var(--animation);
 }
 
-.form-button:hover,
-.form-button:focus {
+.form-button:hover, .form-button:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -124,16 +123,15 @@ ul {
   transition: color var(--animation);
 }
 
+.button-user:hover, .button-user:focus {
+  border-color: var(--logo-focus-color);
+  color: var(--logo-focus-color);
+}
+
 .button-group {
   fill: currentColor;
   width: 106px;
   height: 60px;
-}
-
-.button-user:hover,
-.button-user:focus {
-  border-color: var(--logo-focus-color);
-  color: var(--logo-focus-color);
 }
 
 .f-button {
@@ -172,7 +170,7 @@ ul {
   border: none;
 }
 
-.f-under .button {
+.button {
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -186,18 +184,17 @@ ul {
   transition: background-color var(--animation);
 }
 
-.f-under .button-instagram,
-.f-under .button-twitter,
-.f-under .button-facebook,
-.f-under .button-linkedin {
+.button:hover, .button:focus {
+  background-color: var(--logo-focus-color);
+}
+
+.button-instagram,
+.button-twitter,
+.button-facebook,
+.button-linkedin {
   fill: var(--bckgr-body-color);
   width: 20px;
   height: 20px;
-}
-
-.f-under .button:hover,
-.f-under .button:focus {
-  background-color: var(--logo-focus-color);
 }
 
 .button-icon {
@@ -213,6 +210,30 @@ ul {
   transition: background-color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 
+.button-icon:hover, .button-icon:focus {
+  background-color: var(--logo-focus-color);
+}
+
+.button-icon:hover .photo-instagram,
+.button-icon:hover .photo-twitter,
+.button-icon:hover .photo-facebook,
+.button-icon:hover .photo-linkedin, .button-icon:focus .photo-instagram,
+.button-icon:focus .photo-twitter,
+.button-icon:focus .photo-facebook,
+.button-icon:focus .photo-linkedin {
+  fill: var(--bckgr-body-color);
+}
+
+.button-icon:hover .photo-instagram,
+.button-icon:hover .photo-twitter,
+.button-icon:hover .photo-facebook,
+.button-icon:hover .photo-linkedin, .button-icon:focus .photo-instagram,
+.button-icon:focus .photo-twitter,
+.button-icon:focus .photo-facebook,
+.button-icon:focus .photo-linkedin {
+  fill: var(--bckgr-body-color);
+}
+
 .button-icon .photo-instagram,
 .photo-twitter,
 .photo-facebook,
@@ -221,25 +242,6 @@ ul {
   height: 20px;
   fill: #afb1b8;
   transition: color var(--animation);
-}
-
-.button-icon:hover,
-.button-icon:focus {
-  background-color: var(--logo-focus-color);
-}
-
-.button-icon:hover .photo-instagram,
-.button-icon:hover .photo-twitter,
-.button-icon:hover .photo-facebook,
-.button-icon:hover .photo-linkedin {
-  fill: var(--bckgr-body-color);
-}
-
-.button-icon:focus .photo-instagram,
-.button-icon:focus .photo-twitter,
-.button-icon:focus .photo-facebook,
-.button-icon:focus .photo-linkedin {
-  fill: var(--bckgr-body-color);
 }
 
 .button-panel {
@@ -268,16 +270,12 @@ ul {
   cursor: pointer;
   font-family: inherit;
   border: none;
+  background-color: var(--picture-color);
+  color: var(--primary-text-color);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 
-.button-secondary {
-  background-color: var(--picture-color);
-  color: var(--primary-text-color);
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
+.button-secondary:hover, .button-secondary:focus {
   color: var(--bckgr-body-color);
   background-color: var(--logo-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -410,8 +408,7 @@ ul {
   transition: background-color var(--animation);
 }
 
-.footer-button-sub:hover,
-.footer-button-sub:focus {
+.footer-button-sub:hover, .footer-button-sub:focus {
   background-color: #188ce8;
 }
 
@@ -521,15 +518,15 @@ ul {
   background-color: transparent;
 }
 
-.modal-button-icon {
+.modal-button:hover .modal-button-icon,
+.modal-button:hover .modal-button-icon {
+  fill: var(--logo-focus-color);
+}
+
+.modal-button .modal-button-icon {
   width: 11px;
   height: 11px;
   transition: fill var(--animation);
-}
-
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
-  fill: var(--logo-focus-color);
 }
 
 .modal {
@@ -610,26 +607,24 @@ ul {
   margin-bottom: 9px;
 }
 
-.inform-block .inform-cont:hover,
-.inform-block .inform-cont:focus {
-  color: var(--logo-focus-color);
-}
-
-.inform-block .inform-cont-gr:hover,
-.inform-block .inform-cont-gr:focus {
-  color: var(--logo-focus-color);
-}
-
 .inform-cont {
   text-decoration: none;
   color: var(--bckgr-body-color);
   transition: color var(--animation);
 }
 
+.inform-cont:hover, .inform-cont:focus {
+  color: var(--logo-focus-color);
+}
+
 .inform-cont-gr {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--animation);
+}
+
+.inform-cont-gr:hover, .inform-cont-gr:focus {
+  color: var(--logo-focus-color);
 }
 
 .clients {
@@ -764,7 +759,6 @@ ul {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  /* outline: 10px solid purple; */
 }
 
 .deteil-block li {
@@ -849,7 +843,7 @@ ul {
   margin-left: 50px;
 }
 
-.nav-list .list {
+.list {
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
@@ -861,16 +855,15 @@ ul {
   transition: color var(--animation);
 }
 
-.nav-list .list:hover,
-.nav-list .list:focus {
+.list:hover, .list:focus {
   color: var(--logo-focus-color);
 }
 
-.nav-list .list.current {
+.list.current {
   color: var(--logo-focus-color);
 }
 
-.nav-list .list.current:after {
+.list.current:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -895,7 +888,7 @@ ul {
   margin-left: 0;
 }
 
-.nav-contact .contact {
+.contact {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -907,23 +900,21 @@ ul {
   transition: color var(--animation);
 }
 
+.contact:hover, .contact:focus {
+  color: var(--logo-focus-color);
+}
+
+.contact:nth-child(2n) {
+  margin: auto;
+}
+
 .nav-mail {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.nav-contact .contact:hover,
-.nav-contact .contact:focus {
-  color: var(--logo-focus-color);
-}
-
-.nav-mail:hover,
-.nav-mail:focus {
+.nav-mail:hover, .nav-mail:focus {
   fill: currentColor;
-}
-
-.contact :nth-child(2n) {
-  margin: auto;
 }
 
 .portfolio-body {
@@ -976,9 +967,14 @@ ul {
   text-decoration: none;
 }
 
-.serv-photo a:hover,
-.serv-photo a:focus {
+.serv-photo a:hover, .serv-photo a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.serv-photo a:hover .photo-window,
+.serv-photo a:hover .photo-window, .serv-photo a:focus .photo-window,
+.serv-photo a:focus .photo-window {
+  transform: translatey(0);
 }
 
 .photo-bord {
@@ -1022,11 +1018,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--bckgr-body-color);
   background: rgba(33, 150, 243, 0.9);
-}
-
-.serv-photo a:hover .photo-window,
-.serv-photo a:focus .photo-window {
-  transform: translatey(0);
 }
 
 .picture {
